@@ -64,6 +64,9 @@ while True:
         length = math.hypot(x2-x1, y2-y1)
         # print(length)
 
+	# Signal that ready to receive movement commands
+#	print("Ready for movement command.")
+
         if length < 50:  # Stop moving (for now)
             cv2.circle(frame, (xc, yc), 10, (0, 255, 0), cv2.FILLED)
 
@@ -91,10 +94,11 @@ while True:
 
             crawler = Picrawler([10,11,12,4,5,6,1,2,3,7,8,9])
             speed = 70
-
-            for i in range(0, 2):
-                crawler.do_action('forward',2,speed)
-                sleep(0.05)
+	    # count = 3
+            # while count > 0:
+            crawler.do_action('forward',2,speed)
+            sleep(0.05)
+		# count -= 1
 
     curTime = time.time()  # Gives us current time
     fps = 1 / (curTime - prevTime)
@@ -104,5 +108,5 @@ while True:
     cv2.putText(frame, str(int(fps)), (10, 70), cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 255), 2)
     # Frame rate changes with hands in screen (lower rate with hands)
 
-    cv2.imshow("Frame", frame)
-    cv2.waitKey(1)
+#    cv2.imshow("Frame", frame)
+#    cv2.waitKey(1)
