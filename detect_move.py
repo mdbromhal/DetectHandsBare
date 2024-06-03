@@ -138,6 +138,7 @@ while True:
     # Putting fps onto the frame when showing
     cv2.putText(frame, str(int(fps)), (10, 70), cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 255), 2)
     # Frame rate changes with hands in screen (lower rate with hands)
-
+    
+    print("Frame rate: ", int(fps))
     cv2.imshow("Frame", frame)
     cv2.waitKey(1)
