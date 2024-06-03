@@ -4,8 +4,6 @@
 # Date: January 2024 -- 3 June 2024
 # Purpose: to detect hands in Yelena's camera and determine which action to take, then takes that action
 
-# https://www.youtube.com/watch?v=NZde8Xt78Iw
-
 # Importing necessary packages
 import cv2 # Open CV -- for capturing image/video and processing images
 import mediapipe as mp # Google's Mediapipe -- for detecting landmarks on hands

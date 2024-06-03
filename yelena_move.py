@@ -35,3 +35,5 @@ def move_forward(speed):
 def stay(speed):
     
     print("\nCommand received: STAY")
+    
+# Eof (end of file)
