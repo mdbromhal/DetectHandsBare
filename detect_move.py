@@ -131,7 +131,7 @@ def determine_command(length, speed):
         move.stay(speed)
 
 
-if __name__ == '__main__':
+def main():
     
     # Setting the speed we want Yelena to move at
     speed = 70
@@ -191,5 +191,9 @@ if __name__ == '__main__':
         
         # Using a waitKey to keep the frame on the screen so we can see it
         cv2.waitKey(1)
+        
+        
+if __name__ == '__main__':
+    main()
         
 # Eof (end of file)
